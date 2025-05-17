@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaración de variables</title>
+</head>
+<body>
+    
+    <h1>Sentencias y comentarios en JavaScrit</h1>
+
+    <p>Un <b>programa de JavaScrit</b> es una lista de sentencias que un ordenador puede ejecutar</p>
+
+    <p id="demo"></p>
+
+    <script>
+        // Declaración de variables en una sola linea
+        // let declaramos de manera local o declaración de ambito
+        let x, y, z; // let = palabra reservada para declarar variables
+        n = 5; // n es una variable que no ha sido declarada, por lo que se convierte en una variable global
+        x = 6;
+        y = 8;
+        z = x + y;
+
+        // Salida por pantalla
+
+            document.getElementById("demo").innerHTML = "El valor de la suma de \'x\ + \'y\' es: " + z + ".";
+
+            console.log("x: ", x, "y: ", y, "z: ", z); // salida por consola
+            console.log('La suma de x y z es $(z).'); // salida por consola
+
+    </script>
+
+</body>
+</html>

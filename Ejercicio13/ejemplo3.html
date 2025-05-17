@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM y Javascript - parte 3</title>
+</head>
+<body>
+    
+    <h1>HTML DOM y Javascript - parte 3</h1>
+    <h1>Imagen 1</h1>
+    <img src="" alt="" id="imagen">
+    <br><br>
+    <h1>Imagen 2</h1>
+    <img src="img/flores2.jpg" alt="" width="200">
+
+    <br><br>
+
+    <p id="parrafo1">Color de parrafo</p>
+
+    <script>
+        // Ejemplo 1.1 Modificar atributos de los elementos HTML
+        // Sintaxis: document.getElementById("id").attribute = new value;
+        document.getElementById("imagen").src = "img/flores.jpg";
+        document.getElementById("imagen").width = "200";
+
+        // Ejemplo 1.2 Cambiar los estilos de los elementos HTML usando Javascript
+        // Sintaxis: document.getElementById("id").style.property = new style;
+        document.getElementById("parrafo1").style.color = "blue";
+        document.getElementById("parrafo1").style.fontFamily = "Arial";
+        document.getElementById("parrafo1").style.fontSize = "40px";
+
+
+    </script>
+</body>
+</html>

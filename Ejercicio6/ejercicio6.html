@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables en JavaScrit</title>
+</head>
+<body>
+    <script>
+        /* 
+            *Las variables de JavaScrit se pueden declarar de cuatro maneras:
+                - Automáticamente (sin declarar)
+                - Usando "var"
+                - Usando "let"
+                - Usando "const"
+        */
+
+        // Declarar variables globales
+        x = 5;
+        y = 6;
+        z = x + y;
+        console.log(z);
+
+        // Declarar variables usando la palabra reservada "var"
+        var a = 6;
+        var b = 12;
+
+        // Declarar variables usando la palabra reservada "let"
+        let n = 10;
+        let m = 20;
+
+        function myFunction() {
+            let n = 12; // Esta variable es local a la función
+        }
+
+        // Declarar variables usando la palabra reservada "const"
+        const h = 80;
+        const j = 30;
+        const myFunction2 = () => {
+            // Codigo de ejecución
+        }
+
+        console.log(h);
+
+        // Error al imprimir, ya que no se puede modificar una variable declarada con la palabra reservada "const"
+        // h = 70;
+
+    </script>
+</body>
+</html>

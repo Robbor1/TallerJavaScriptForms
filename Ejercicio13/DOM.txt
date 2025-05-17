@@ -1,0 +1,19 @@
+Descripción DOM (Document Object Model):
+    * Una página web es un documento. (HTML, XML)
+    * El DOM da una representación del documento como un grupo de nodos y objetos
+      estructurados que tienen propiedades y métodos.
+        * Window
+            *document
+                - URL
+                - location
+                - body
+                    <h1>
+                    <p>
+                    <a>
+                    etc.
+                - etc
+    * El DOM fue diseñado para ser independiente de cualquier lenguaje de programación.
+    * Esencialmente, conecta las páginas web a scripts o lenguajes de programación
+      para que estos puedan crear, buscar, modificar o eliminar los elementos de la página web.
+ 
+                    

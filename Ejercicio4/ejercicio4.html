@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 4 - Salidas por pantalla</title>
+</head>
+<body>
+
+    <h1>Mi página web</h1>
+
+    <p id="demo"></p>
+
+    
+    <button type="button" onclick="document.write(7+4)">Dar click para mostrar la suma</button>
+    
+    <script>
+        // document.getElementById("demo").innerHTML = "<h2> Hola Mundo </h2>";
+        // document.write("Hola Mundo");
+        // document.getElementById("demo").innerText = "Hola mundo - usando innderText";
+        // console.log("Hola mundo - salida con console.log");
+        // alert("Hola mundo - soy una alerta");
+
+        // Ejemplo de salida por consola de objetos
+        const myObject = {nombre: "Rob", edad:22};
+
+        console.log(myObject);
+
+        // Ejemplo de salida con un Array
+
+        const myArray = ["Naranja", "Manzana", "Fresa"];
+
+        console.log(myArray);
+
+    </script>
+</body>
+</html>

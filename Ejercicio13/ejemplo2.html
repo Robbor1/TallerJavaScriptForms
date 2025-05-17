@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM y Javascript - Parte 2</title>
+</head>
+<body>
+
+    <h1>HTML DOM y Javascript - Parte 2</h1>
+
+    <p id="demo"></p>
+    <p></p>
+
+    <p>1. Este es el primer parrafo de ejemplo</p>
+    <p>2. Este es el segundo parrafo de ejemplo</p>
+
+    <p class="intro"></p>
+    <a href="" class="intro"></a>
+
+    <script>
+        //Ejemplo 1.1 Encontrar elemento por ID
+        var encontrarElementoPorId = document.getElementById("demo").innerHTML = "Es es un elemento con ID";
+        console.log(encontrarElementoPorId);
+
+        //Ejemplo 1.2 Encontrar elemento por tipo de etiqueta
+        var elementosParrafos = document.getElementsByTagName("p");
+        console.log(elementosParrafos);
+
+        console.log(elementosParrafos[2].textContent)
+        console.log("Nombre del nodo o etiqueta: " + elementosParrafos[2].nodeName);
+        console.log(elementosParrafos[3].textContent)
+
+        //Ejemplo 1.3 Encontrar elementos HTML por medio de nombre clase
+        var parrafoIntro = document.getElementsByClassName("intro");
+        console.log(parrafoIntro);
+
+        parrafoIntro[0].innerHTML = "El elemento es encontrado por el nombre de la clase";
+
+    </script>
+    
+</body>
+</html>

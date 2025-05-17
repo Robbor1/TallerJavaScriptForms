@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM HTML y Javascript - Parte 4</title>
+</head>
+<body>
+    
+    <h1>DOM HTML y Javascript - Parte 4</h1>
+
+    <script>
+        // Crear elementos HTML con Javascript
+        
+        window.onload = function() {
+            var element_h2 = document.createElement("h2");
+            var content_text_h2 = document.createTextNode("Este es un subtitulo");
+            element_h2.appendChild(content_text_h2);
+            document.body.appendChild(element_h2);
+
+            var element_div = document.createElement("div");
+            var element_p = document.createElement("p");
+            var content_text_p = document.createTextNode("Parrafo de ejemplo");
+            element_p.appendChild(content_text_p);
+            element_div.appendChild(element_p);
+            document.body.appendChild(element_div);
+        }
+    </script>
+</body>
+</html>

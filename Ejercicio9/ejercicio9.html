@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tipos de datos</h1>
+
+    <p>JavaScript es un lenguaje de programación interpretado y de tipado dinámico.</p>
+    <p>Los tipos de datos más comunes en JavaScript son:</p>
+    <p>
+        <li>Cadena - string</li>
+        <li>Número - int - integer</li>
+        <li>Bigint</li>
+        <li>Booleano</li>
+        <li>Función</li>
+        <li>UnderFind</li>
+        <li>Nulo</li>
+        <li>Array</li>
+        <li>Objeto</li>
+
+    </p>
+
+    <script>
+        /* Aqui se puede declarar las variables y utilizar los tipos de datos que 
+        mencionamos anteriormente
+        */
+
+        let nombre = "Rob";
+        let edad = 22;
+        let numerofloat = 123.567;
+        let booleano = true; // true o false
+        let fn = function() {
+            return "Hola, retorno desde una función"
+        };
+        let nulo = null; // No tiene valor
+        let indefinido; // Default
+        let arreglo = ["uno","dos","tres"]; // Los índices de un arreglo empiezan con 0
+        let objetos = {
+            // Propiedades : valores
+            nombre: "Rob",
+            apellido: "hr",
+            edad: 22,
+            genero: "Masculino",
+            obtenerDatos: function() {
+                return "Retorno del return de la propieadad de objetos"
+            }
+        }
+
+        // Aqui vamos a imprimir por consola el valor de cada variable anterior
+        console.log("Valor de variable nombre: ", nombre);
+        console.log("Valor de variable edad: ", edad);
+        console.log("Valor de variable numerofloat: ", numerofloat);
+        console.log("Valor de variable booleano: ", booleano);
+        console.log("Valor de variable fn: ", fn());
+        console.log("Valor de variable nulo: ", nulo);
+        console.log("Valor de variable indefinido: ", indefinido);
+        console.log("Valor de variable arreglo: ", arreglo);
+        console.log("Valor específico de variable arreglo: ", arreglo[2]);
+        console.log("Valor de variable objetos: ", objetos);
+        console.log("Propiedad 'nombre' de variable objetos: ", objetos.nombre);
+        console.log("Propiedad 'genero' de variable objetos: ", objetos.genero);
+        console.log("Propiedad 'obtenerDatos' de variable objetos: ", objetos.obtenerDatos());
+
+
+    </script>
+</body>
+</html>

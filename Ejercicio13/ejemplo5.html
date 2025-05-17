@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM y Javascript - Parte 5</title>
+</head>
+<body>
+
+    <h1>HTML DOM y Javascript - Parte 5</h1>
+
+    <button onclick="miFuncion()">Dar click para cambiar color de texto</button>
+
+    <p class="ejemplo">1. Hola, soy un elemento con clase "ejemplo"</p>
+    <p class="ejemplo">2. Hola, soy un elemento con clase "ejemplo"</p>
+    <p class="ejemplo">3. Hola, soy un elemento con clase "ejemplo"</p>
+
+    <p id="demo">Hola, soy un elemento con un ID de selector</p>
+    
+    <div class="ejemplo">
+        <p>Este parrafo se encuentra en un DIV</p>
+    </div>
+
+    <script>
+        //5.1 Obtener elemento por medio de clase
+        // const x = document.querySelectorAll("p.ejemplo");
+        // console.log(x[2].textContent);
+
+        //5.2 Obtener elemento por medio de ID
+        const y = document.querySelectorAll("#demo");
+        console.log(y[0].textContent);
+
+        //5.3 Cambiar el color de fondo de todos los elementos con la clase "ejemplo"
+        const nodoLista = document.querySelectorAll("p.ejemplo")
+
+        for (let i = 0; i < nodoLista.length; i++) {
+            nodoLista[i].style.backgroundColor = "yellow";
+        }
+
+        //5.4 Cambiar el color de texto a todos los parrafos usando una función
+        function miFuncion() {
+            const miListaNodos = document.querySelectorAll("#demo");
+            for (let i = 0; i < miListaNodos.length; i++) {
+                miListaNodos[i].style.color= "blue";
+            }
+        }
+    </script>
+</body>
+</html>

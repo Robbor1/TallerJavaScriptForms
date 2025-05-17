@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM y Javascript - Parte 6</title>
+</head>
+<body>
+
+    <h1>HTML DOM y Javascript - Parte 6</h1>
+
+    <h2>Método addEventListener()</h2>
+
+    <p id="demo"></p>
+
+    <p id="demo-dos"></p>
+
+    <p id="demo-tres"></p>
+
+
+
+    <script>
+        //Ejemplo 6.1 Trabajando sobre el objeto document y elementos HTML
+
+        // document.addEventListener("click", myFunction);
+
+        // function myFunction() {
+        //      document.getElementById("demo").innerHTML = "Hola, como estas?";
+        //  }
+
+        document.addEventListener("click", function() {
+            document.getElementById("demo").innerHTML = "Hola, como estas?";
+        });
+
+        //6.2 Usando varios eventos con addEventListener
+
+        document.addEventListener("mouseover", myFirstFunction);
+        document.addEventListener("mouseout", mySecondFunction);
+
+        function myFirstFunction() {
+            document.getElementById("demo-dos").innerHTML = "Hola, estas moviendo el mouse";
+        }
+
+        function mySecondFunction() {
+            document.getElementById("demo-tres").innerHTML = "Mouse fuera de la ventana o documento"
+        }
+
+    </script>
+</body>
+</html>

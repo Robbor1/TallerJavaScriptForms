@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+
+    <style>
+        .caja {
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+            background-color: lightcoral;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Eventos en JavaScript</h1>
+
+    <button onclick="mensajeConAlert()">Dar click para mostrar mensaje</button>
+
+    <button id="segundoEjemploEventos">Dar click para mostrar segundo mensaje</button>
+
+    <p id="tercerEjemploEventos">Pasar con el mouse por encima para mostrar el mensaje</p>
+
+    <button id="btn-caja">Crear caja</button>
+    <section id="contenedor"></section>
+
+    <script>
+
+        /* 
+            Los eventos HTML son "cosas" que les suceden a los elementos HTML.
+
+            Cuando se utiliza JavaScript en páginas HTML, JavaScript puede "reaccionar" a
+            estos eventos.
+
+            <nombreEtiquetaHTML evento="acción">
+        
+
+            Primero ejemplo con eventos.
+        */
+
+        function mensajeConAlert() {
+            alert('Mi primer mensaje usando eventos');
+        }
+
+    </script>
+
+    <script>
+
+        //Segundo ejemplo - eventos usando addEventListener('onclick', acción)
+        function segundoEjemploEventos() {
+            alert('Este es mi segundo mensaje con eventos :D')
+        }
+
+        var btnMensajeDos = document.getElementById("segundoEjemploEventos");
+        //console.log(btnMensajeDos);
+        btnMensajeDos.addEventListener('click', segundoEjemploEventos)
+
+    </script>
+
+    <script>
+
+        //Ejemplo 3 - Usando el evento mouseover
+
+        function tercerMensajeConEventos() {
+            alert("Tercer mensaje con un evento");
+        }
+
+        var btnTercerMensaje = document.getElementById("tercerEjemploEventos");
+        btnTercerMensaje.addEventListener('mouseover', tercerMensajeConEventos)
+
+    </script>
+
+    <script>
+
+        //Ejemplo 4 del ejercicio #12
+        function crearCaja() {
+            var contenedor = document.getElementById('contenedor');
+            var caja = document.createElement('div');
+            caja.className = 'caja';
+            contenedor.appendChild(caja);
+        }
+
+        var btnCaja = document.getElementById('btn-caja');
+        btnCaja.addEventListener('click', crearCaja);
+
+    </script>
+
+</body>
+</html>
